@@ -4,10 +4,12 @@
  * Copyright (c) 2021 AxelWulong
  */
 
+#include "main.h"
+
 int main(int argc, char **argv)
 {
-    //spaceCreator();
-    //spaceSeter();
-    //spacePrinter();
+    fieldCreator();
+    //fieldSeter();
+    //fieldPrinter();
     return (0);
 }

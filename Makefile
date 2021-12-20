@@ -7,13 +7,20 @@
 NAME= gameOfLife
 CC= gcc
 FLAGS= -Wall -Wextra -Werror
+INC= -I include/
+
 SRC= srcs/main.c \
-	# field.c \
-	 view.c
+	 srcs/field.c \
+	 srcs/view.c
+
 OBJ= $(SRC:.c=.o)
 
-all : $(OBJ)
-	$(CC) $(FLAGS) -o $(NAME) $^
+#all : $(OBJ)
+#	$(CC) $(INC) $(FLAGS) -o $(NAME) $^
+
+all : $(SRC)
+	$(CC) $(INC) -c $< -o $@
+	$(CC) -o $(NAME) $(OBJ)
 
 clean : 
 	rm $(OBJ)
