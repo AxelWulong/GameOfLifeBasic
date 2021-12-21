@@ -6,3 +6,8 @@
 
 #include "field.h"
 
+int **fieldCreator(int argc, char**argv)
+{
+    
+}
+

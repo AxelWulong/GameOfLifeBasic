@@ -8,7 +8,7 @@
 
 int main(int argc, char **argv)
 {
-    fieldCreator();
+    int **field = fieldCreator(argc, argv);
     //fieldSeter();
     //fieldPrinter();
     return (0);
